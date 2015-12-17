@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="columns_stylesheet.css">
+	</head>
+
+
+	<body>
+
+		Number 1: <input type="text" id="num1"> 
+		Number 2: <input type="text" id="num2"> 
+		<button id="add" onclick="addNums()">Click to add</button> <br>
+
+		<span id="result">Result Here</span>
+
+
+
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+		<!-- plugging javascript directly in HTML -->
+		<div onclick="change()" id="el">CHANGE ME</div>
+
+		<script id="el">
+			function change(){   document.getElementById('el').innerHTML = "NEW TEXT"; }
+		</script>
+
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	
+
+		<div onclick="change()" id="helloworld">Click for a hello!</div>
+		<script id="helloworld">
+			function change(){   alert("Hello World!"); }
+		</script>
+
+
+
+
+		<script id="results">
+			function addnumbersamples(){ }
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="app.js"></script>
+	</body>
+
+</html>
