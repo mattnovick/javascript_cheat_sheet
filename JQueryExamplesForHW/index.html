@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        height: 200px;
+        background-color: yellowgreen;
+      }
+
+      .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-8, .box-10 {
+      	float: left;
+      	margin: auto 0;
+      	height: 300px;
+      	width: 300px;
+      	margin: 50px;
+      	background-color: black;
+      }
+      
+      
+    </style>
+  </head>
+
+  <body>
+
+    <div class="box-1">Box1</div>
+
+    <div class="box-2">Box2</div>
+
+    <div class="box-3">Box3</div>
+
+    <div class="box-4">Box4</div>
+
+
+
+    <script src="jquery-2.1.4.min.js"></script>
+    <script>
+
+    	$(document).ready(function() {
+	    	$(".box-1").click(   
+	    		function(){alert('imclicked!');   
+	    		} 
+	  		);
+
+	  		$(".box-2").animate({
+	         	opacity: 0.5}, 2000)
+	  		;
+
+	        $(".box-3").fadeOut(1000, function() {
+	          $(".box-3").fadeIn(1000);
+	   		});
+
+	      	$(".box-4").hide(3000, function() {
+	          $(".box-4").show(3000);
+	      	});
+	      
+        });
+    </script>
+  </body>
+</html>
